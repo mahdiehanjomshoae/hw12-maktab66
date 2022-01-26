@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/compiled/q1.css">
+    
+</head>
+<body>
+  
+  <div class="container">
+    <form class="login_form"  name="form" onsubmit="return validated(event)" action="home.html">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+      <div id="name_error">please fill up your name</div>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+      <div id="lname_error">please fill up your name</div>
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Iran</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <button type="submit" class="btnSubmit"id="myBtn">send</button>
+    
+    </form>
+  </div>
+      <script src="./q1.js"></script>
+</body>
+</html>
+  

@@ -1,0 +1,60 @@
+
+$myfont:Arial, Helvetica, sans-serif;
+$green:#45a049;
+$bgFormGray:#f2f2f2;
+$colorinput:#ffffff;
+$bghover:#4ec955;
+
+body{
+    font-family: $myfont;
+}
+* {
+    box-sizing: border-box;
+}
+@mixin inputText {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $bgFormGray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+    
+}
+  input[type="text"], 
+  select, 
+  textarea {
+    @include inputText
+  }
+
+.btnSubmit{
+    background-color: $green;
+    color: $colorinput;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ & .btnSubmit:hover {
+    background-color: $bghover ;
+  }
+}
+  
+  .container {
+    border-radius: 5px;
+    background-color: $bgFormGray;
+    padding: 20px;
+  }
+  .login_form #name_error,
+  .login_form #lname_error{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+  }
